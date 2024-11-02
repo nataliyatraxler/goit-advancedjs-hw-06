@@ -3,6 +3,9 @@
   який може містити значення "male", "female". Створіть змінну myGender цього типу.
 */
 
-const myGender;
+type Gender = "male" | "female";
 
-export {};
+let myGender: Gender;
+
+myGender = "male";   // Валідне значення
+// myGender = "other"; // Помилка: Type '"other"' is not assignable to type 'Gender'
